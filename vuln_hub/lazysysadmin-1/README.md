@@ -150,4 +150,4 @@ WX6k7NJtA8gfk*w5J3&T@*Ga6!0o5UP89hMVEQ#PT9851
 pf%&1nRpaj^68ZeV2St9GkdoDkj48Fl$MI97Zt2nebt02
 bhO!5Je65B6Z0bhZhQ3W64wL65wonnQ$@yw%Zhy0U19pu
 
-![alt text](https://github.com/s1l3xz/some/blob/vuln_hub/lazysysadmin-1/proof.png)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/lazysysadmin-1/proof.png)

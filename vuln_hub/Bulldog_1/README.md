@@ -6,7 +6,7 @@ scan host:
 nikto http://192.168.56.101:8080/
 
 /home/r1s3/storage/ctf/some/vuln_hub/Bulldog_1
-![alt text](https://github.com/s1l3xz/some/vuln_hub/Bulldog_1/blob/master/nikto_scan.jpg)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/Bulldog_1/nikto_scan.jpg)
 
 	
 	find /dev dir
@@ -16,7 +16,7 @@ Visit http://192.168.56.101:8080/dev/
 	
 find comments in web page source
 
-![alt text](https://github.com/s1l3xz/some/vuln_hub/Bulldog_1/blob/master/comments.png)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/Bulldog_1/comments.png)
 
 	<!--Need these password hashes for testing. Django's default is too complex-->
 	<!--We'll remove these in prod. It's not like a hacker can do anything with a hash-->
@@ -44,7 +44,7 @@ Than go to  http://192.168.56.101:8080/dev/shell/
 
 Find CLI vulnerability in command field:
 
-![alt text](https://github.com/s1l3xz/some/vuln_hub/Bulldog_1/blob/master/CLI.png)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/Bulldog_1/CLI.png)
 
 store perl reverse shell on my remote apache server:
 
@@ -62,7 +62,7 @@ execute perl script over CLI :ls & perl /tmp/lol2.pl & id
 
 Get rev shell under jango
 
-![alt text](https://github.com/s1l3xz/some/vuln_hub/Bulldog_1/blob/master/rev_shell.png)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/Bulldog_1/rev_shell.png)
 
 find customPermissionApp elf file in /home/bulldogadmin/.hiddenadmindirectory directory
 
@@ -74,4 +74,4 @@ got root ;
 
 find secret in /root/congrats.txt
 
-![alt text](https://github.com/s1l3xz/some/vuln_hub/Bulldog_1/blob/master/proof.jpg)
+![alt text](https://github.com/s1l3xz/some/tree/master/vuln_hub/Bulldog_1/proof.jpg)
