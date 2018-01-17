@@ -57,7 +57,7 @@ got root command execution by CLI injection ( thank Julia team member , I really
 
 got flag in /root dir inside picture in base64 encoding:
 
-![alt text](https://github.com/s1l3xz/some/blob/master/vuln_hub/The Ether: EvilScience/flag1.png)
+![alt text](https://github.com/s1l3xz/some/blob/master/vuln_hub/The\ Ether:\ EvilScience/flag1.png)
 
 
 ![alt text](https://github.com/s1l3xz/some/blob/master/vuln_hub/The Ether: EvilScience/flag2.png)
