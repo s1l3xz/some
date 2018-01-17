@@ -54,6 +54,8 @@ see what files can be executed under root user from www-data : sudo -l
 
 got root command execution by CLI injection ( thank Julia team member , I really tried over ssh username injection :(   ) : 
 
+![alt text](https://github.com/s1l3xz/some/blob/master/vuln_hub/The_Ether_EvilScience/priv2.png)
+
 
 got flag in /root dir inside picture in base64 encoding:
 
